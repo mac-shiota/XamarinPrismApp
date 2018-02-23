@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinPrismApp.Views.MainPage"
-             Title="{Binding Title}">
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinPrismApp.Views.MainPage"
+    Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <Label Text="Welcome to Xamarin Forms and Prism!" /> 
-        <Entry Text="{Binding YourName}" />
+        <Entry Text="{Binding YourName.Value}" />
         <Button Text="決定" Command="{Binding DecisionCommand}" />
-        <Label Text="{Binding Message}" />
+        <Label Text="{Binding Message.Value}" />
     </StackLayout>
 
 </ContentPage>
